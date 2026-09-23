@@ -1,0 +1,642 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0F0E0103DCF26A5123309CEC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8B207BB6BDE2770F1A2C1920 /* Assets.xcassets */; };
+		15875F4643D18D14BDB8A6A5 /* ReaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CB263A48EA5D4A41B6FC634 /* ReaderView.swift */; };
+		1DC34258D8DADAC2AD6CF621 /* FeedCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2BBFCF9A0423F3AC0B14DA2 /* FeedCardView.swift */; };
+		20153DE3FD1DA7DE13960C14 /* WebArticleMetadataFetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9BDEF3DA53876859FF1D4F4 /* WebArticleMetadataFetcher.swift */; };
+		2F9D314FA22955EEDCCB5861 /* Article.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9314B1934B1232D09DC3E288 /* Article.swift */; };
+		3AD8D7EEEC13F2D325A04EF4 /* AppModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C17DA3897B7BD16CA9C153D9 /* AppModel.swift */; };
+		51B66DD062D2117917F344AE /* LyraTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 205EEE2233F8781FAA7F542D /* LyraTheme.swift */; };
+		56D239C85C48A997A6AEDB89 /* FolderDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0CF4FDCA71CCBFE8CBABC7D /* FolderDetailView.swift */; };
+		60E6CE48B1ECFCF2B6B61A87 /* FeedPalette.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD325F66D7CD4892D9691F9E /* FeedPalette.swift */; };
+		64F2038CDF9276303B54C61F /* FolderEditorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51342A151CE5EC9022EEF617 /* FolderEditorView.swift */; };
+		652810614CBDA92B9AAC1F23 /* LibraryStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = E67AA5DE7DD62A0210CA4102 /* LibraryStore.swift */; };
+		8527A29EC2409949111DB5CC /* EditArticleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9CC9D1049BE7DB889A7D80A /* EditArticleView.swift */; };
+		8BC94C2783B576DA39B9A729 /* SafariReaderPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E70569B7A6E51B75062A13C /* SafariReaderPresenter.swift */; };
+		8D894191797C7481BCAA6A23 /* LibraryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79380A0568450395AC95FF6B /* LibraryView.swift */; };
+		9050375D8A1989BFB171D13D /* ArticleRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44C997BD23CC659AC7B02C27 /* ArticleRepository.swift */; };
+		948763B8B3BEF08448A8A1BC /* ReaderRouteResolver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AFE0868883B733417F57D8C /* ReaderRouteResolver.swift */; };
+		97E2F0EAFFF4942727779A92 /* LyraApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB540A8C3ADD5F6B585DE006 /* LyraApp.swift */; };
+		9A0C5523BFEB79ED8BF281D7 /* AppModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBE53F5FA518C7EBEEFF430B /* AppModelTests.swift */; };
+		A5471B835DF9C9BF5ED9CBBB /* RootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A7232E88E9633E24C2A8E18 /* RootView.swift */; };
+		A6D22CD10FEE5208E1F4A7F0 /* LibraryComponents.swift in Sources */ = {isa = PBXBuildFile; fileRef = 316A69417505F8810E189E49 /* LibraryComponents.swift */; };
+		AAFC15F3889018FDA52CFC0E /* FeedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D2067121305BF0AE2D6C286 /* FeedView.swift */; };
+		BE7C61A6A34D495E2145DCA8 /* PreviewArticleRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63B0D315678018FF0064C2B4 /* PreviewArticleRepository.swift */; };
+		C0857B11901CF26B254B520B /* FolderPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB0BE71A86A78CEB163BFCFD /* FolderPickerView.swift */; };
+		C19494E789EDE6B494544748 /* Textual in Frameworks */ = {isa = PBXBuildFile; productRef = F0C2BF7E0E322DA87C51C099 /* Textual */; };
+		C5385493F391277B319ACA98 /* LibraryState.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDAE6E3BF471E41208D7DCBB /* LibraryState.swift */; };
+		CD9CCD9BF322E54DCB1A7181 /* ArticleWebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC5F1BC58BFD0370CCD6F466 /* ArticleWebView.swift */; };
+		DA13A78072AEDD9266919656 /* ArticleMarkdownView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9B1CA6E1EB0768C11BB9559 /* ArticleMarkdownView.swift */; };
+		F7081B967521CFAC7DFB6B5F /* AddArticleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CBAE1B6E76093B1002E716F /* AddArticleView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		47FC62D58665451187154BA9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AAE96C742830217FB796E898 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E372207A5839862C925C2051;
+			remoteInfo = Lyra;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0CBAE1B6E76093B1002E716F /* AddArticleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddArticleView.swift; sourceTree = "<group>"; };
+		0D2067121305BF0AE2D6C286 /* FeedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedView.swift; sourceTree = "<group>"; };
+		205EEE2233F8781FAA7F542D /* LyraTheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LyraTheme.swift; sourceTree = "<group>"; };
+		2AFE0868883B733417F57D8C /* ReaderRouteResolver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReaderRouteResolver.swift; sourceTree = "<group>"; };
+		2BFC37901B41B00319A98FF9 /* LyraTests.xctest */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.cfbundle; path = LyraTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		316A69417505F8810E189E49 /* LibraryComponents.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LibraryComponents.swift; sourceTree = "<group>"; };
+		3CB263A48EA5D4A41B6FC634 /* ReaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReaderView.swift; sourceTree = "<group>"; };
+		3E70569B7A6E51B75062A13C /* SafariReaderPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafariReaderPresenter.swift; sourceTree = "<group>"; };
+		44C997BD23CC659AC7B02C27 /* ArticleRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleRepository.swift; sourceTree = "<group>"; };
+		4A7232E88E9633E24C2A8E18 /* RootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootView.swift; sourceTree = "<group>"; };
+		51342A151CE5EC9022EEF617 /* FolderEditorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FolderEditorView.swift; sourceTree = "<group>"; };
+		63B0D315678018FF0064C2B4 /* PreviewArticleRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviewArticleRepository.swift; sourceTree = "<group>"; };
+		79380A0568450395AC95FF6B /* LibraryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LibraryView.swift; sourceTree = "<group>"; };
+		8B207BB6BDE2770F1A2C1920 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		9314B1934B1232D09DC3E288 /* Article.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Article.swift; sourceTree = "<group>"; };
+		B0CF4FDCA71CCBFE8CBABC7D /* FolderDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FolderDetailView.swift; sourceTree = "<group>"; };
+		B9B1CA6E1EB0768C11BB9559 /* ArticleMarkdownView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleMarkdownView.swift; sourceTree = "<group>"; };
+		B9CC9D1049BE7DB889A7D80A /* EditArticleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditArticleView.swift; sourceTree = "<group>"; };
+		BBE53F5FA518C7EBEEFF430B /* AppModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppModelTests.swift; sourceTree = "<group>"; };
+		BD325F66D7CD4892D9691F9E /* FeedPalette.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedPalette.swift; sourceTree = "<group>"; };
+		C17DA3897B7BD16CA9C153D9 /* AppModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppModel.swift; sourceTree = "<group>"; };
+		C2BBFCF9A0423F3AC0B14DA2 /* FeedCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedCardView.swift; sourceTree = "<group>"; };
+		DDAE6E3BF471E41208D7DCBB /* LibraryState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LibraryState.swift; sourceTree = "<group>"; };
+		E67AA5DE7DD62A0210CA4102 /* LibraryStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LibraryStore.swift; sourceTree = "<group>"; };
+		E788D0078F570D85A61E0F7B /* Lyra.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = Lyra.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		EC5F1BC58BFD0370CCD6F466 /* ArticleWebView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleWebView.swift; sourceTree = "<group>"; };
+		F9BDEF3DA53876859FF1D4F4 /* WebArticleMetadataFetcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebArticleMetadataFetcher.swift; sourceTree = "<group>"; };
+		FB0BE71A86A78CEB163BFCFD /* FolderPickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FolderPickerView.swift; sourceTree = "<group>"; };
+		FB540A8C3ADD5F6B585DE006 /* LyraApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LyraApp.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		BEEACDE7B6D99805F84EDFC2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C19494E789EDE6B494544748 /* Textual in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		08656AF2269C41709828F081 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				8B207BB6BDE2770F1A2C1920 /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		151FE4A238407119026AD6B4 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				3102125F6C23439D1633D44F /* Models */,
+				87FBEA1A43294E21385CCFE8 /* Repositories */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		26EF7C2AD1B3EF69E41E5FAE /* Features */ = {
+			isa = PBXGroup;
+			children = (
+				92ED60FD8EFB287E32E3F5FD /* Feed */,
+				32FE3306668D6EB25AD13D6A /* Library */,
+				F9C6950C7FF3BFAB1C4084CE /* Reader */,
+			);
+			path = Features;
+			sourceTree = "<group>";
+		};
+		3102125F6C23439D1633D44F /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				9314B1934B1232D09DC3E288 /* Article.swift */,
+				DDAE6E3BF471E41208D7DCBB /* LibraryState.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		32FE3306668D6EB25AD13D6A /* Library */ = {
+			isa = PBXGroup;
+			children = (
+				B9CC9D1049BE7DB889A7D80A /* EditArticleView.swift */,
+				B0CF4FDCA71CCBFE8CBABC7D /* FolderDetailView.swift */,
+				51342A151CE5EC9022EEF617 /* FolderEditorView.swift */,
+				FB0BE71A86A78CEB163BFCFD /* FolderPickerView.swift */,
+				316A69417505F8810E189E49 /* LibraryComponents.swift */,
+				79380A0568450395AC95FF6B /* LibraryView.swift */,
+			);
+			path = Library;
+			sourceTree = "<group>";
+		};
+		4433F5487468CCF5408C22B3 = {
+			isa = PBXGroup;
+			children = (
+				B26B695774E918E53117A056 /* Lyra */,
+				A222AEDBFAEEB3B36D000F72 /* LyraTests */,
+				9734FB8F43025E39ACD3642E /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		63DB5109460E22353D0C7F33 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				C17DA3897B7BD16CA9C153D9 /* AppModel.swift */,
+				FB540A8C3ADD5F6B585DE006 /* LyraApp.swift */,
+				4A7232E88E9633E24C2A8E18 /* RootView.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		84A97B3ADB240C9E94D5DEB5 /* DesignSystem */ = {
+			isa = PBXGroup;
+			children = (
+				BD325F66D7CD4892D9691F9E /* FeedPalette.swift */,
+				205EEE2233F8781FAA7F542D /* LyraTheme.swift */,
+			);
+			path = DesignSystem;
+			sourceTree = "<group>";
+		};
+		87FBEA1A43294E21385CCFE8 /* Repositories */ = {
+			isa = PBXGroup;
+			children = (
+				44C997BD23CC659AC7B02C27 /* ArticleRepository.swift */,
+				E67AA5DE7DD62A0210CA4102 /* LibraryStore.swift */,
+				63B0D315678018FF0064C2B4 /* PreviewArticleRepository.swift */,
+				F9BDEF3DA53876859FF1D4F4 /* WebArticleMetadataFetcher.swift */,
+			);
+			path = Repositories;
+			sourceTree = "<group>";
+		};
+		92ED60FD8EFB287E32E3F5FD /* Feed */ = {
+			isa = PBXGroup;
+			children = (
+				0CBAE1B6E76093B1002E716F /* AddArticleView.swift */,
+				C2BBFCF9A0423F3AC0B14DA2 /* FeedCardView.swift */,
+				0D2067121305BF0AE2D6C286 /* FeedView.swift */,
+			);
+			path = Feed;
+			sourceTree = "<group>";
+		};
+		9734FB8F43025E39ACD3642E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E788D0078F570D85A61E0F7B /* Lyra.app */,
+				2BFC37901B41B00319A98FF9 /* LyraTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A222AEDBFAEEB3B36D000F72 /* LyraTests */ = {
+			isa = PBXGroup;
+			children = (
+				BBE53F5FA518C7EBEEFF430B /* AppModelTests.swift */,
+			);
+			path = LyraTests;
+			sourceTree = "<group>";
+		};
+		B26B695774E918E53117A056 /* Lyra */ = {
+			isa = PBXGroup;
+			children = (
+				63DB5109460E22353D0C7F33 /* App */,
+				151FE4A238407119026AD6B4 /* Core */,
+				84A97B3ADB240C9E94D5DEB5 /* DesignSystem */,
+				26EF7C2AD1B3EF69E41E5FAE /* Features */,
+				08656AF2269C41709828F081 /* Resources */,
+			);
+			path = Lyra;
+			sourceTree = "<group>";
+		};
+		F9C6950C7FF3BFAB1C4084CE /* Reader */ = {
+			isa = PBXGroup;
+			children = (
+				B9B1CA6E1EB0768C11BB9559 /* ArticleMarkdownView.swift */,
+				EC5F1BC58BFD0370CCD6F466 /* ArticleWebView.swift */,
+				2AFE0868883B733417F57D8C /* ReaderRouteResolver.swift */,
+				3CB263A48EA5D4A41B6FC634 /* ReaderView.swift */,
+				3E70569B7A6E51B75062A13C /* SafariReaderPresenter.swift */,
+			);
+			path = Reader;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		2656256E64E978000368ACA9 /* LyraTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B4474A186B1E915088816F5E /* Build configuration list for PBXNativeTarget "LyraTests" */;
+			buildPhases = (
+				F670EEC93FA8DEE97D5320BE /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A57F6E2AFFD15F0C5571AE33 /* PBXTargetDependency */,
+			);
+			name = LyraTests;
+			packageProductDependencies = (
+			);
+			productName = LyraTests;
+			productReference = 2BFC37901B41B00319A98FF9 /* LyraTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		E372207A5839862C925C2051 /* Lyra */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1B9EA6F7D0C1CE5E90796DD7 /* Build configuration list for PBXNativeTarget "Lyra" */;
+			buildPhases = (
+				10F6E341F0C5625728617CB2 /* Sources */,
+				DE4272F0E77047D3192E37F1 /* Resources */,
+				BEEACDE7B6D99805F84EDFC2 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Lyra;
+			packageProductDependencies = (
+				F0C2BF7E0E322DA87C51C099 /* Textual */,
+			);
+			productName = Lyra;
+			productReference = E788D0078F570D85A61E0F7B /* Lyra.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		AAE96C742830217FB796E898 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					2656256E64E978000368ACA9 = {
+						ProvisioningStyle = Automatic;
+					};
+					E372207A5839862C925C2051 = {
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 99155C1C52FEE11511653F03 /* Build configuration list for PBXProject "Lyra" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = 4433F5487468CCF5408C22B3;
+			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				FCAD780058151B06ABF5B6A1 /* XCRemoteSwiftPackageReference "textual" */,
+			);
+			preferredProjectObjectVersion = 77;
+			productRefGroup = 9734FB8F43025E39ACD3642E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E372207A5839862C925C2051 /* Lyra */,
+				2656256E64E978000368ACA9 /* LyraTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		DE4272F0E77047D3192E37F1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0F0E0103DCF26A5123309CEC /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		10F6E341F0C5625728617CB2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F7081B967521CFAC7DFB6B5F /* AddArticleView.swift in Sources */,
+				3AD8D7EEEC13F2D325A04EF4 /* AppModel.swift in Sources */,
+				2F9D314FA22955EEDCCB5861 /* Article.swift in Sources */,
+				DA13A78072AEDD9266919656 /* ArticleMarkdownView.swift in Sources */,
+				9050375D8A1989BFB171D13D /* ArticleRepository.swift in Sources */,
+				CD9CCD9BF322E54DCB1A7181 /* ArticleWebView.swift in Sources */,
+				8527A29EC2409949111DB5CC /* EditArticleView.swift in Sources */,
+				1DC34258D8DADAC2AD6CF621 /* FeedCardView.swift in Sources */,
+				60E6CE48B1ECFCF2B6B61A87 /* FeedPalette.swift in Sources */,
+				AAFC15F3889018FDA52CFC0E /* FeedView.swift in Sources */,
+				56D239C85C48A997A6AEDB89 /* FolderDetailView.swift in Sources */,
+				64F2038CDF9276303B54C61F /* FolderEditorView.swift in Sources */,
+				C0857B11901CF26B254B520B /* FolderPickerView.swift in Sources */,
+				A6D22CD10FEE5208E1F4A7F0 /* LibraryComponents.swift in Sources */,
+				C5385493F391277B319ACA98 /* LibraryState.swift in Sources */,
+				652810614CBDA92B9AAC1F23 /* LibraryStore.swift in Sources */,
+				8D894191797C7481BCAA6A23 /* LibraryView.swift in Sources */,
+				97E2F0EAFFF4942727779A92 /* LyraApp.swift in Sources */,
+				51B66DD062D2117917F344AE /* LyraTheme.swift in Sources */,
+				BE7C61A6A34D495E2145DCA8 /* PreviewArticleRepository.swift in Sources */,
+				948763B8B3BEF08448A8A1BC /* ReaderRouteResolver.swift in Sources */,
+				15875F4643D18D14BDB8A6A5 /* ReaderView.swift in Sources */,
+				A5471B835DF9C9BF5ED9CBBB /* RootView.swift in Sources */,
+				8BC94C2783B576DA39B9A729 /* SafariReaderPresenter.swift in Sources */,
+				20153DE3FD1DA7DE13960C14 /* WebArticleMetadataFetcher.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F670EEC93FA8DEE97D5320BE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9A0C5523BFEB79ED8BF281D7 /* AppModelTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A57F6E2AFFD15F0C5571AE33 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E372207A5839862C925C2051 /* Lyra */;
+			targetProxy = 47FC62D58665451187154BA9 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		0349DF4A142F037DD4D0A5C0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = Lyra;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.education";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UIRequiresFullScreen = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.lyra.reader;
+				PRODUCT_NAME = Lyra;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		2D3B2F860C39FC8B10CDE081 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = Lyra;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.education";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UIRequiresFullScreen = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.lyra.reader;
+				PRODUCT_NAME = Lyra;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		358BA11C5E305677CBED7C4E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.lyra.reader.tests;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Lyra.app/Lyra";
+			};
+			name = Release;
+		};
+		4B4F40024B795B221B67312F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 6.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		8AEEFA34D57B12621FADD5AD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.lyra.reader.tests;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Lyra.app/Lyra";
+			};
+			name = Debug;
+		};
+		B5FBB991BA617DD35147CBB4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"DEBUG=1",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 6.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1B9EA6F7D0C1CE5E90796DD7 /* Build configuration list for PBXNativeTarget "Lyra" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0349DF4A142F037DD4D0A5C0 /* Debug */,
+				2D3B2F860C39FC8B10CDE081 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		99155C1C52FEE11511653F03 /* Build configuration list for PBXProject "Lyra" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B5FBB991BA617DD35147CBB4 /* Debug */,
+				4B4F40024B795B221B67312F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		B4474A186B1E915088816F5E /* Build configuration list for PBXNativeTarget "LyraTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8AEEFA34D57B12621FADD5AD /* Debug */,
+				358BA11C5E305677CBED7C4E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		FCAD780058151B06ABF5B6A1 /* XCRemoteSwiftPackageReference "textual" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/gonzalezreal/textual";
+			requirement = {
+				kind = exactVersion;
+				version = 0.5.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		F0C2BF7E0E322DA87C51C099 /* Textual */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = FCAD780058151B06ABF5B6A1 /* XCRemoteSwiftPackageReference "textual" */;
+			productName = Textual;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = AAE96C742830217FB796E898 /* Project object */;
+}
