@@ -39,7 +39,7 @@ Run the unit tests with `make test`. The Makefile targets the simulator ID liste
 | [`Lyra/Core`](Lyra/Core) | Article models, metadata, and local JSON storage |
 | [`LyraTests`](LyraTests) | Persistence and reader-routing tests |
 
-The app is written in SwiftUI. [`project.yml`](project.yml) is the XcodeGen source of truth; the generated Xcode project is checked in so it can also be opened directly. [`design/`](design) contains the interaction and reader research.
+The app is written in SwiftUI. [`project.yml`](project.yml) is the XcodeGen source of truth; the generated Xcode project is checked in so it can also be opened directly.
 
 ## Current scope
 

@@ -84,7 +84,6 @@ Lyra/
     Library/        Reading history, liked, and completed articles
   Resources/       Asset catalogs
 LyraTests/         Unit tests
-design/            Product and platform research
 project.yml        XcodeGen source of truth
 Makefile           Pinned simulator development commands
 ```
@@ -93,7 +92,7 @@ Makefile           Pinned simulator development commands
 
 The project currently pins
 [Textual 0.5.0](https://github.com/gonzalezreal/textual) for the Markdown
-renderer spike described in `design/reader-rendering.md`. It is kept behind
+renderer. It is kept behind
 `ArticleMarkdownView` so it can be replaced by a Lyra-owned renderer without
 changing feed, reader, or persistence code.
 
